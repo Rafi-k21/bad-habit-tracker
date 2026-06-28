@@ -1,5 +1,6 @@
-const API_URL = "http://127.0.0.1:5050";
-
+const API_URL =
+  "https://bad-habit-tracker-production.up.railway.app";
+  
 let selectedHabitId = null;
 let currentChallenge = null;
 let currentProgress = [];
