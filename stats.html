@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Statistics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <nav class="navbar">
+    <h2>Consistency Tracker</h2>
+
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="history.html">History</a>
+      <a href="stats.html">Statistics</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Statistics</h1>
+    <p>Your overall discipline performance.</p>
+  </header>
+
+  <section class="dashboard">
+    <div class="stat-card">
+      <h3>Total Challenges</h3>
+      <p id="totalChallenges">0</p>
+    </div>
+
+
+    <div class="stat-card">
+      <h3>Average Success</h3>
+      <p id="averageSuccess">0%</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Best Success</h3>
+      <p id="bestSuccess">0%</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Total Good Days</h3>
+      <p id="totalGoodDays">0</p>
+    </div>
+  </section>
+
+  <section class="heatmap-section">
+  <h2>Discipline Heatmap</h2>
+  <div id="heatmap" class="heatmap"></div>
+</section>
+
+</div>
+
+<script src="stats.js"></script>
+</body>
+</html>

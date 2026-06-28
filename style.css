@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #020617, #111827);
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+.navbar {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 18px;
+  padding: 18px 28px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #22c55e;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #9ca3af;
+}
+
+.habit-box {
+  display: flex;
+  gap: 12px;
+  background: #111827;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #374151;
+}
+
+input {
+  flex: 1;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #374151;
+  background: #020617;
+  color: white;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+.habit-list-section,
+.progress-section,
+.summary,
+.action-panel,
+.heatmap-section {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 18px;
+  padding: 24px;
+  margin-top: 30px;
+}
+
+.habit-list-section h2 {
+  margin-top: 0;
+}
+
+.habit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.habit-btn {
+  background: #1f2937;
+  border: 1px solid #374151;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 14px;
+}
+
+.habit-btn.active,
+.habit-btn:hover {
+  background: #22c55e;
+  color: #052e16;
+}
+
+.empty-message {
+  color: #9ca3af;
+}
+
+#habitTitle {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #facc15;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #111827;
+  border: 1px solid #374151;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 16px;
+  background: #374151;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: #22c55e;
+  transition: 0.3s;
+}
+
+.calendar-section {
+  margin-top: 30px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 14px;
+}
+
+.day-card {
+  background: #111827;
+  border: 1px solid #374151;
+  padding: 15px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.day-card.good {
+  border-color: #22c55e;
+}
+
+.day-card.bad {
+  border-color: #ef4444;
+}
+
+.day-card h3 {
+  margin-top: 0;
+}
+
+.status {
+  margin: 10px 0;
+  color: #d1d5db;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.yes {
+  background: #16a34a;
+}
+
+.no,
+.reset-btn {
+  background: #dc2626;
+}
+
+.summary p {
+  background: #020617;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.complete-btn {
+  width: 100%;
+  background: #facc15;
+  color: #111827;
+}
+
+.danger-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.reset-btn,
+.delete-btn {
+  width: 100%;
+}
+
+.delete-btn {
+  background: #991b1b;
+}
+
+.history-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.history-card {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.history-card h3 {
+  margin-top: 0;
+  color: #22c55e;
+}
+
+.history-card p {
+  color: #d1d5db;
+}
+
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18px, 1fr));
+  gap: 8px;
+}
+
+.heat-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+}
+
+.good-box {
+  background: #22c55e;
+}
+
+.bad-box {
+  background: #ef4444;
+}
+
+.empty-box {
+  background: #374151;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 12px;
+  }
+
+  .app {
+    padding: 12px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .habit-box {
+    flex-direction: column;
+  }
+
+  .danger-actions {
+    flex-direction: column;
+  }
+
+  .days {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}

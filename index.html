@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:,">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="app">
+    <nav class="navbar">
+      <h2>Consistency Tracker</h2>
+
+      <div class="nav-links">
+        <a href="index.html">Dashboard</a>
+        <a href="history.html">History</a>
+        <a href="stats.html">Statistics</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>1% Better</h1>
+      <p>Track multiple bad habits for 30 days.</p>
+    </header>
+
+    <section class="habit-box">
+      <input id="habitInput" type="text" placeholder="Track your Progress by additng your Habit">
+      <button onclick="saveHabit()">Add Habit</button>
+    </section>
+
+    <section class="habit-list-section">
+      <h2>Active Habits</h2>
+      <div id="habitList" class="habit-list"></div>
+    </section>
+
+    <h2 id="habitTitle">Select or create a habit</h2>
+
+    <section class="dashboard">
+      <div class="stat-card">
+        <h3>Good Days</h3>
+        <p id="goodDays">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Bad Days</h3>
+        <p id="badDays">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Success</h3>
+        <p id="successRate">0%</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Current Streak</h3>
+        <p id="streak">0 days</p>
+      </div>
+    </section>
+
+    <section class="progress-section">
+      <div class="progress-info">
+        <span>Monthly Progress</span>
+        <span id="progressText">0%</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </section>
+
+    <section class="calendar-section">
+      <h2>30-Day Calendar</h2>
+      <div id="daysContainer" class="days"></div>
+    </section>
+
+    <section class="summary">
+      <h2>Weekly Breakdown</h2>
+      <p id="week1">Week 1: 0 Yes / 0 No</p>
+      <p id="week2">Week 2: 0 Yes / 0 No</p>
+      <p id="week3">Week 3: 0 Yes / 0 No</p>
+      <p id="week4">Week 4: 0 Yes / 0 No</p>
+    </section>
+
+    <section class="action-panel">
+      <button class="complete-btn" onclick="completeChallenge()">Complete Challenge</button>
+
+      <div class="danger-actions">
+        <button class="reset-btn" onclick="resetChallenge()">Reset Challenge</button>
+        <button class="delete-btn" onclick="deleteHabit()">Delete Habit</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js?v=10"></script>
+</body>
+</html>
