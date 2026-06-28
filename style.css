@@ -396,3 +396,8 @@ button:hover {
     height: 16px;
   }
 }
+.footer {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
